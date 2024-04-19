@@ -28,5 +28,18 @@ for verseny in adat:
             print(f"\t{verseny.datum} : {verseny.helyezes}. hely")
 
 
+print("5. feladat: Hibastatisztika")
+
+
 hiba = {}
-        
+
+for verseny in adat:   
+    if verseny.hibaoka in hiba:
+        hiba[verseny.hibaoka] += 1
+    else:
+        hiba[verseny.hibaoka] = 1
+
+for k,v in hiba.items():
+    if k != "":
+        if v > 1:
+            print(f"\t{k}: {v}")
