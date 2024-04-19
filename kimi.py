@@ -21,10 +21,10 @@ print(f"3. feladat: {len(adat)-1}")
 
 
 for verseny in adat:
-    print(verseny)
+    
     if verseny.nagydij == "Magyar Nagydíj":
-        if verseny == "I":
-            print(f"{verseny.datum} : {verseny.helyezes}. hely")
+        if verseny.celbaert == "I":
+            print(f"\t{verseny.datum} : {verseny.helyezes}. hely")
 
 
 hiba = {}
