@@ -15,5 +15,5 @@ adat = []
 for sor in f:
     sor  = sor.strip().split()
     adat.append(Verseny(sor[0],sor[1],sor[2],sor[3],sor[4],sor[5],sor[6],sor[7],sor[8],))
-
+    
         
