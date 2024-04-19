@@ -20,8 +20,9 @@ print(f"3. feladat: {len(adat)-1}")
 
 
 
+print("4. feladat: Magyar Nagydíj helyezésével")
+
 for verseny in adat:
-    
     if verseny.nagydij == "Magyar Nagydíj":
         if verseny.celbaert == "I":
             print(f"\t{verseny.datum} : {verseny.helyezes}. hely")
